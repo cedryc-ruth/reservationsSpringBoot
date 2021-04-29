@@ -9,10 +9,6 @@
 	     <div layout:fragment="content">
 	        <h1 th:text="${artist.firstname} +' '+ ${artist.lastname}">Bob Sull</h1>
 	        <h1 th:text="|${artist.firstname}  ${artist.lastname}|">Bob Sull</h1>
-	        
-	        <ul th:unless="${#lists.isEmpty(artist.types)}">
-	        	<li th:each="type : ${artist.types}" th:text="${type.type}">Type</li>
-   	        </ul>
 	     </div>
 	</div>
 </body>
