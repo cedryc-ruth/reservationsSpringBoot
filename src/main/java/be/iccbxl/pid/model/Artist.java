@@ -29,6 +29,10 @@ public class Artist {
 		this.lastname = lastname;
 	}
 
+	public Long getId() {
+		return id;
+	}
+
 	public String getFirstname() {
 		return firstname;
 	}
