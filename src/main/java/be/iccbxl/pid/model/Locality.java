@@ -50,6 +50,10 @@ public class Locality {
 		this.locality = locality;
 	}
 	
+	public List<Location> getLocations() {
+		return locations;
+	}
+
 	public Locality addLocation(Location location) {
 		if(!this.locations.contains(location)) {
 			this.locations.add(location);
