@@ -35,7 +35,7 @@ public class Location {
 	private String website;
 	private String phone;
 	
-	@OneToMany
+	@OneToMany(targetEntity=Show.class, mappedBy="location")
 	private List<Show> shows = new ArrayList<>();
 
 	

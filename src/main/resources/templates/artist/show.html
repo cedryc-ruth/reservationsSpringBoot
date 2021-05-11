@@ -13,6 +13,8 @@
 	        <ul th:unless="${#lists.isEmpty(artist.types)}">
 	        	<li th:each="type : ${artist.types}" th:text="${type.type}">Type</li>
    	        </ul>
+   	        
+   	        <nav><a th:href="@{/artists}">Retour à l'index</a></nav>
 	     </div>
 	</div>
 </body>
