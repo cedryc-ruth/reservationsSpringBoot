@@ -9,7 +9,7 @@
 	     <div layout:fragment="content">
 	        <h1 th:text="${show.title}">Ayiti</h1>
 
-	        <p th:if="${show.posterUrl}"><img th:src="@{'/images/'+${show.posterUrl}}" th:alt="${show.posterUrl}" src="/images/default.jpg" width="200"></p>
+	        <p th:if="${show.posterUrl}"><img th:src="@{'/images/'+${show.posterUrl}}" th:alt="${show.title}" src="/images/default.jpg" width="200"></p>
 	        <canvas th:unless="${show.posterUrl}" width="200" height="100" style="border:1px solid #000000;"></canvas>
         
 	        <p th:if="${show.location}"><strong>Lieu de création:</strong> <span th:text="${show.location.designation}">Art Center</span></p>
