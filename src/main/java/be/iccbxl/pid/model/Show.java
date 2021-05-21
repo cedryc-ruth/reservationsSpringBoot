@@ -68,7 +68,10 @@ public class Show {
 		this.updatedAt = null;
 	}
 
-
+	public Long getId() {
+		return id;
+	}
+	
 	public String getSlug() {
 		return slug;
 	}
