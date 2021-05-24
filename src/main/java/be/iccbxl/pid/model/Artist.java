@@ -55,8 +55,22 @@ public class Artist {
 		return types;
 	}
 
-	public void setTypes(List<Type> types) {
-		this.types = types;
+	public Artist addType(Type type) {
+		if(!this.types.contains(type)) {
+			this.types.add(type);
+			type.addArtist(this);
+		}
+		
+		return this;
+	}
+	
+	public Artist removeType(Type type) {
+		if(this.types.contains(type)) {
+			this.types.remove(type);
+			type.getArtists().remove(this);
+		}
+		
+		return this;
 	}
 
 	@Override
