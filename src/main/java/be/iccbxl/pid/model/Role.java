@@ -60,7 +60,7 @@ public class Role {
 		return this;
 	}
 	
-	public Role removeRole(User user) {
+	public Role removeUser(User user) {
 		if(this.users.contains(user)) {
 			this.users.remove(user);
 			user.getRoles().remove(this);
